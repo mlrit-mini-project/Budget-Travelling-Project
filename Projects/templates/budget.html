@@ -1,0 +1,163 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MLRIT META | Register or Create an account</title>
+              
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link href="{%static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{%static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{%static 'css/tooplate-kool-form-pack.css' %}" rel="stylesheet">
+       
+<style>
+        /* Style the select field */
+        select {
+            width: 100%;
+            padding: 16px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            border-radius: 35px;
+            font-size: 16px;
+        }
+        .label1{
+            color:white;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+    </style>
+        
+        <script type="text/JAVASCRIPT">
+             function validate()
+            {
+                
+                budget=document.getElementById("budget").value;
+                return true;
+            }
+
+
+    onsubmit ="return Validate()"
+            </script>
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="index.html">
+                                <i class="bi-box"></i>
+
+                                <span>
+                                    Vehicle Breakdown Assistance
+                                </span>
+                            </a>
+
+                            <ul class="social-icon d-flex justify-content-center align-items-center mx-auto">
+                                <span class="text-white me-4 d-none d-lg-block">Vehicle Support</span>
+
+                              
+
+                               </ul>
+                            <div class="row justify-content-center align-items-center">
+                                <div class="col-lg-5 col-12">
+                                    <a href="#" class="btn custom-btn custom-border-btn">Review</a>
+                                    
+                                </div>
+                            
+                                <div class="col-lg-5 col-12">
+                                    <a href="{%url 'index'%}" class="btn custom-btn custom-border-btn">Logout</a>
+                                </div>
+                            </div>
+
+                            
+
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+
+            
+
+
+          
+            
+
+
+            <section class="hero-section d-flex justify-content-center align-items-center">
+                
+                    
+
+                        <div class="col-lg-6 col-12 mx-auto">
+                            
+                            <form class="custom-form" role="form" method="post">
+                                {%csrf_token%}
+                                
+
+                                <div class="row">
+                                   
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                        
+                                           <br>
+                                        <h2>Services</h2><input type="text" name="service" id="service " class="form-control" placeholder="Towing/Battery dead/Flat tyre" required="">
+                                        <h2>Date</h2><input type="date" name="date" id="date"  class="form-control" placeholder="" required="">
+                                        <h2>Vehicle Type</h2><input type="text" name="vehicletype" id="vehicletype " class="form-control" placeholder="Bike/Car" required="">
+                                        
+                                    
+                                
+                        
+                             
+                                        <div class="col-lg-5 col-md-5 col-5 ms-auto">
+                                            <button type="submit" value="budget" class="form-control" >Continue</button>
+                                        </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </form>
+                            
+                        </div>
+                    
+               
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="{%static 'videos/video1.mp4' %}" type="video/mp4">
+
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+        <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{%static 'js/countdown.js' %}"></script>
+        <script src="{%static 'js/init.js' %}"></script>
+
+    </body>
+</html>

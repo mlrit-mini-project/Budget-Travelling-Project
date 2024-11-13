@@ -1,0 +1,191 @@
+{%load static%}
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>MLRIT META</title>
+
+<script>
+    document.getElementById("myButton").onclick = function () {
+ alert("Button clicked");
+};
+
+</script>
+                  
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,700;1,200&family=Unbounded:wght@400;700&display=swap" rel="stylesheet">
+        
+        <link href="{%static 'css/bootstrap.min.css' %}" rel="stylesheet">
+
+        <link href="{%static 'css/bootstrap-icons.css' %}" rel="stylesheet">
+
+        <link href="{%static 'css/tooplate-kool-form-pack.css' %}" rel="stylesheet">
+        <style>
+            .styled-table {
+    border-collapse: collapse;
+    margin: 125px 0;
+    
+    
+    min-width: 400px;
+    box-shadow: 0 0 20px rgb(255, 0, 0);
+    
+}
+.styled-table thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    text-align: left;
+    
+}
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    background-color: #6fa399;
+    
+}
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+    
+}
+.styled-table tbody tr.active-row {
+    
+    color: #000000;
+    
+}
+        </style>
+
+    </head>
+    
+    <body>
+
+        <main>
+
+            <header class="site-header">
+                <div class="container">
+                    <div class="row justify-content-between">
+
+                        <div class="col-lg-12 col-12 d-flex align-items-center">
+                            <a class="site-header-text d-flex justify-content-center align-items-center me-auto" href="{%url 'index'%}">
+                                <i class="bi-box"></i>
+
+                                <span>
+                                    BUDGET TRAVELLING
+                                </span>
+                            </a>
+
+                            <ul class="social-icon d-flex justify-content-center align-items-center mx-auto">
+                                <span class="text-white me-4 d-none d-lg-block">FOLLOW ON</span>
+
+                                <li class="social-icon-item">
+                                    <a href="https://www.instagram.com/mlr_institute_of_technology/?hl=en" class="social-icon-link bi-instagram"></a>
+                                </li>
+
+                               </ul>
+                            <div class="row justify-content-center align-items-center">
+                                
+                                <div class="col-lg-5 col-12">
+                                    <a href="{%url 'success'%}" class="btn custom-btn custom-border-btn">Confirm</a>
+                                </div>
+                                <div class="col-lg-5 col-12">
+                                    <a href="{%url 'index'%}" class="btn custom-btn custom-border-btn">Logout</a>
+                                </div>
+                            </div>
+
+                            
+
+                            
+
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+            
+
+
+            
+
+            <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+                <div class="container"><br><br><br><br>
+                    <div class="row">
+                        <table class="styled-table">
+                            <thead>
+                                <tr>
+                                    <th>Place Name</th>
+                                    <th>Pictures</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Yelleswaramgattu</td>
+                                    <td><img src="{% static 'images/yelleswaragattu.jpg' %}" width="150" height="150"></td>
+                                    <td>→Average expense: Starting from ₹10000 (1 day)<br>
+                                        →Ideal Time to Visit: may to june<br>
+                                        →How to Reach There:<br>
+                                        →Air: hyderabad Airport (78 km)<br>
+                                        →Bus: srisailam Bus Stand 1 km
+                                    </td></td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>Statue of Equality</td>
+                                    <td><img src="{% static 'images/soe.jpg' %}" width="150" height="150"></td>
+                                    <td>→Average expense: Starting from ₹5000 (1 day)<br>
+                                        →Ideal Time to Visit: any month<br>
+                                        →How to Reach There:<br>
+                                        →Air: hyderabad Airport (28 km)<br>
+                                        →Bus: nampally railway station 16 km<br>
+                                        →Bus: panjagutta Bus Stand 7 km</td>
+                                </tr>
+                                <tr class="active-row">
+                                    <td>Anantha Giri Hills</td>
+                                    <td><img src="{% static 'images/AnanthHills.png' %}" width="150" height="150"></td>
+                                    <td>→Average expense: Starting from ₹10000 (1 day)<br>
+                                        →Ideal Time to Visit: ony Summer<br>
+                                        →How to Reach There:<br>
+                                        →Air: hyderabad Airport (88 km)<br>
+                                        →Bus: vikrabad Bus Stand 17 km</td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                </div>
+
+                <div class="video-wrap">
+                    <video autoplay="" loop="" muted="" class="custom-video" poster="">
+                        <source src="{%static 'videos/video.mp4' %}" type="video/mp4">
+
+                        
+                    </video>
+                </div>
+            </section>
+        </main>
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+        <script src="{%static 'js/bootstrap.bundle.min.js' %}"></script>
+        <script src="{%static 'js/countdown.js' %}"></script>
+        <script src="{%static 'js/init.js' %}"></script>
+
+    </body>
+</html>
