@@ -7,3 +7,4 @@ Step 3:-Clone the repository to working directory.
 Step 4:-Now Migrate all project files and run sqldb file to create a db in xampp.
 Step 5:-Now Start Django framework and copy the path and open it in chrome.
 Step 6:-Successfully deployed.
+.
